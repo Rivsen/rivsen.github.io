@@ -1,0 +1,63 @@
+# Harmony Jekyll theme general configurations 
+
+# Base URL
+baseurl:
+
+# Site live URL
+url: http://rivsen.github.io
+
+# Localhost 
+# url: http://127.0.0.1:4000  
+
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Rivsen's Blog
+  # Little description about your site
+  description: 这里是我的博客，使用github pages创建。
+  # 'meta_description:' Write an awesome description for your new site here.
+  # It will appear in your document head meta (for Google search results) and 
+  # in your feed.xml site description.
+  meta_description: > # 
+   Rivsen的博客，喜欢折腾，喜欢php，对symfony和silex框架感兴趣
+   This theme sourced on Github - https://github.com/gayanvirajith/harmony
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Rivsen Tan
+    email: rivsen1003@gmail.com
+    url: http://rivsen.github.io
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key:
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: Rivsen
+    twitter: 
+    facebook: 
+    gplus: +Rivsen
+    dribble: 
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings 
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments 
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
