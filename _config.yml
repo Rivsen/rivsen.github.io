@@ -4,7 +4,7 @@
 baseurl:
 
 # Site live URL
-url: http://rivsen.github.io
+url: https://rivsen.github.io
 
 # Localhost 
 # url: http://127.0.0.1:4000  
@@ -24,7 +24,7 @@ harmony:
   author: # Author details
     name: Rivsen Tan
     email: rivsen1003@gmail.com
-    url: http://rivsen.github.io
+    url: https://rivsen.github.io
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key:
