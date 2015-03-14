@@ -247,3 +247,6 @@ $ git push --tags
 推送成功之后，用composer命令查看一下版本信息，是不是有了一个0.1.0的stable版本了呢！到此为止，基本的发布流程就讲完啦！
 
 有什么意见或建议，可以创建一个[issue](https://github.com/Rivsen/hello-world/issues/new)给我，我会及时回复的！
+
+hello-world 包资源地址： https://github.com/Rivsen/hello-world
+composer 包名称： rivsen/hello-world
