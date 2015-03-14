@@ -41,7 +41,9 @@ harmony:
   show_disclaimer: true
 
 # Conversion / Build settings 
-markdown:    kramdown
+markdown:    redcarpet
+redcarpet:
+      extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 # This is how you put pygments config in jekyll 2.0 instead of pygments: true
 highlighter: pygments 
 
