@@ -174,7 +174,7 @@ $ cd ~/work/github/hello-world
 $ composer install
 ```
 
-然后创建一个测试php文件，引入autoload，并且实力化一个我们的Hello类。
+然后创建一个测试php文件，引入autoload，并且实例化一个我们的Hello类。
 
 ```bash
 $ touch test.php
