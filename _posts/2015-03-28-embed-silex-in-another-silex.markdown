@@ -3,10 +3,12 @@ layout: post
 title:  "把silex嵌入到另一个silex中"
 date:   2015-03-28 15:40:45
 description: silex嵌入另一个silex
+permalink: post/embed-silex-in-another-silex
 disqus:
   id: embed-silex-in-another-silex
 categories:
 - blog
+- php
 - silex
 ---
 
