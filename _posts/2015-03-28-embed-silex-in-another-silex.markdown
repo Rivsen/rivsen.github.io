@@ -12,7 +12,7 @@ categories:
 
 今天来点儿黑科技～如何在silex框架里嵌入另一个框架（silex本身）
 
-由于silex的核心是基于symfony的事件驱动的http-kernel组件，所以这个看似复杂的任务就相当轻松的完成了，只需要在所有的任务都执行之后，返回Response对象即可，记住，不能掉用send方法，因为这个方法真的会把内容写入到输出中，具体做了什么可以去看 `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php : public function send()`，所以我们的修改也就异常简单了，首先，需要制作一个无论怎样都要返回个Response对象的框架～，继承Silex\Application，然后重写它的run方法：
+由于silex的核心是基于symfony的事件驱动的http-kernel组件，所以这个看似复杂的任务就相当轻松的完成了，只需要在所有的任务都执行之后，返回Response对象即可，记住，不能调用send方法，因为这个方法真的会把内容写入到输出中，具体做了什么可以去看 `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php : public function send()`，所以我们的修改也就异常简单了，首先，需要制作一个无论怎样都要返回个Response对象的框架～，继承Silex\Application，然后重写它的run方法：
 
 ```php
 <?php
