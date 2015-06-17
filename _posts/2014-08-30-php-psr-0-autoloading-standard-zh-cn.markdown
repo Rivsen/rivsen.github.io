@@ -19,25 +19,25 @@ categories:
 
 ## 必要条件 ##
 
-    1. 一个完全合格的 namespace(命名空间)与class(类)需要符合这样的结构 ```\<Vendor Name>\(<Namespace>\)*<Class Name> ```。
-    2. 每个 namespace 需要有一个顶层的命名空间(“提供者名称 Vendor Name”)。
-    3. 如果需要的话，每个 namespace 都可以有多个子命名空间。
-    4. 当 namespace 如果是从文件系统加载时，其使用的分隔符都要转换成 ```DIRECTORY_SEPARATOR``` 。
-    5. 类名称(class name)中，每个下划线(‘_’)都要转换成 ```DIRECTORY_SEPARATOR``` 因为下划线在 namespace 中是没有意义的。
-    6. 从文件系统载入的合格 namespace 与 class 一定是“.php”结尾。
-    7. Vendors name、namespace 以及 class name 所使用的字母都可以由大小写组成。
+1. 一个完全合格的 namespace(命名空间)与class(类)需要符合这样的结构 ```\<Vendor Name>\(<Namespace>\)*<Class Name> ```。
+2. 每个 namespace 需要有一个顶层的命名空间(“提供者名称 Vendor Name”)。
+3. 如果需要的话，每个 namespace 都可以有多个子命名空间。
+4. 当 namespace 如果是从文件系统加载时，其使用的分隔符都要转换成 ```DIRECTORY_SEPARATOR``` 。
+5. 类名称(class name)中，每个下划线(‘_’)都要转换成 ```DIRECTORY_SEPARATOR``` 因为下划线在 namespace 中是没有意义的。
+6. 从文件系统载入的合格 namespace 与 class 一定是“.php”结尾。
+7. Vendors name、namespace 以及 class name 所使用的字母都可以由大小写组成。
 
 ## 示例 ##
 
-    1. ```\Doctrine\Common\IsolatedClassLoader``` => ```/path/to/project/lib/vendor/Doctrine/Common/IsolatedClassLoader.php```
-    2. ```\Symfony\Core\Request``` => ```/path/to/project/lib/vendor/Symfony/Core/Request.php```
-    3. ```\Zend\Acl``` => ```/path/to/project/lib/vendor/Zend/Acl.php```
-    4. ```\Zend\Mail\Message``` => ```/path/to/project/lib/vendor/Zend/Mail/Message.php```
+1. ```\Doctrine\Common\IsolatedClassLoader``` => ```/path/to/project/lib/vendor/Doctrine/Common/IsolatedClassLoader.php```
+2. ```\Symfony\Core\Request``` => ```/path/to/project/lib/vendor/Symfony/Core/Request.php```
+3. ```\Zend\Acl``` => ```/path/to/project/lib/vendor/Zend/Acl.php```
+4. ```\Zend\Mail\Message``` => ```/path/to/project/lib/vendor/Zend/Mail/Message.php```
 
 ## 命名空间与类名称中的下划线 ##
 
-    1. ```\namespace\package\Class_Name``` => ```/path/to/project/lib/vendor/namespace/package/Class/Name.php```
-    2. ```\namespace\package_name\Class_name``` => ```/path/to/project/lib/vendor/namespace/package_name/Class/Name.php```
+1. ```\namespace\package\Class_Name``` => ```/path/to/project/lib/vendor/namespace/package/Class/Name.php```
+2. ```\namespace\package_name\Class_name``` => ```/path/to/project/lib/vendor/namespace/package_name/Class/Name.php```
 
 我们设定这个标准，来使自动加载有个基本的共通性。你可以尝试遵循这个标准使用 SplClassLoader 来加载 PHP 5.3 的类。[译注：[RFC:SplClassLoader](https://wiki.php.net/rfc/splclassloader)]
 
