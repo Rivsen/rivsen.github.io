@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "php的一个类定义先后顺序的问题"
-date:   2013-11-20 06:07:15
+date:   2013-08-28 06:07:15
 description: "php的一个类定义先后顺序的问题"
 permalink: post/php-class-define-order-problem
 disqus:
