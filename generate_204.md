@@ -1,4 +1,4 @@
 ---
 layout: none
-permalink: /generate\_204
+permalink: /generate_204
 ---
