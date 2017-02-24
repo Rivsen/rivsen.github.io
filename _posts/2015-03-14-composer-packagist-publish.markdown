@@ -216,7 +216,7 @@ $ git branch
 我们会看到绿色的master前面有个星号，说明当前工作分支是master，那么对应的composer包的版本就是dev-master，是不是有些熟悉了。接下来我们创建一个0.1分支，作为我们0.1版本的迭代分支，并基于它提交一些代码，然后推送。
 
 ```bash
-$ git checkout branch -b 0.1
+$ git checkout -b 0.1
 ```
 
 比如我们编辑readme，添加使用示例（虽然我们在0.1分支开发和提交，但是我们一定要在特性或者bug修复的工作完成之后，合并回master）。
